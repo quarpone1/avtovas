@@ -1,0 +1,11 @@
+{
+  "name": "autovas-taplink",
+  "private": true,
+  "description": "Премиальный taplink АвтоВас",
+  "scripts": {
+    "start": "npx --yes serve . -p 5180",
+    "docker:build": "docker compose build",
+    "docker:up": "docker compose up -d --build",
+    "docker:down": "docker compose down"
+  }
+}

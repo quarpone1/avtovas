@@ -1,0 +1,7 @@
+.git
+.gitignore
+.cursor
+**/node_modules
+*.log
+.DS_Store
+deploy/DEPLOY.txt

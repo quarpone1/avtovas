@@ -1,0 +1,14 @@
+.DS_Store
+.cursor/
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Local tunnel artifacts (if any)
+*.out
+
+# Unused source images in root (not referenced by site)
+/Frame 1.png
+/Frame 2.png
+/C99HS4rVGgAQQOcj057hT2YKodScnDQZr-Yyt7OmNAfsF0NmtXowEu51MHyCU78ToSnU4pA_TWFhSwaUfpmwyVQ_.jpg

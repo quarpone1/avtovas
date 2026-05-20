@@ -1,0 +1,16 @@
+# Скопировать на сервер: /etc/caddy/Caddyfile
+# HTTPS — основной сайт
+xn--80aafa3duad.xn--p1ai, www.xn--80aafa3duad.xn--p1ai {
+	reverse_proxy 127.0.0.1:8080
+}
+
+# HTTP: файлы верификации Яндекса/Google — 200 без редиректа
+http://xn--80aafa3duad.xn--p1ai, http://www.xn--80aafa3duad.xn--p1ai {
+	@verify path /yandex_*.html /google*.html
+	handle @verify {
+		reverse_proxy 127.0.0.1:8080
+	}
+	handle {
+		redir https://{host}{uri} permanent
+	}
+}
